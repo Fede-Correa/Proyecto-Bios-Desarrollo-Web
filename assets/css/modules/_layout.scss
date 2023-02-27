@@ -1,0 +1,101 @@
+.container1 {
+    position: sticky;
+    max-width:1280px;
+    margin: 0 auto;
+    padding:0 2%;
+    h2 {
+        @extend %orange;
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+   
+}
+
+.standard-sectionn {
+    padding:50px 0;
+}
+
+.listadoCards {
+    padding:30px 0;
+    .swiper-pagination-bullet {//size de los bullets
+        width:15px;
+        height:15px;
+    }
+    .swiper-pagination-bullet-active {
+        @extend %bg-white;
+    }
+    .swiper-horizontal > .swiper-pagination-bullets, 
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom:0;
+    }
+    .swiper-button-next, 
+    .swiper-button-prev {//las flechas
+        width:35px;
+        height:35px;
+        &::after {
+            content:'';
+        }
+    }
+    .swiper-button-next {
+        //x y
+        background: url(../images/arrow-right.svg) 0 0 no-repeat;
+        background-size:contain;
+    }
+    .swiper-button-prev {
+        //x y
+        background: url(../images/arrow-left.svg) 0 0 no-repeat;
+        background-size:contain;
+    }
+
+    .swiper-button-next.swiper-button-disabled,  
+    .swiper-button-prev.swiper-button-disabled {
+        opacity: 0;
+    }
+
+}
+
+.listado-images {
+    padding:0 0 20px 0;
+    .swiper-slide {
+        position: relative;
+        height:550px;
+    }
+    .slider-content {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        h3 {
+            //font-size:6vw;//vw viewport width o vh viewport height 
+            font-size:clamp(5vw,60px,7vw);
+            @extend %white;
+            text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.8);
+            padding:0 10px;
+            @media only screen and (max-width:480px){
+                font-size:11vw;
+            }
+        }
+
+    }
+}
+
+.bg-img {
+   object-fit: cover;
+   width:100%;
+   height:100%;
+}
+
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+    mix-blend-mode: multiply;
+}

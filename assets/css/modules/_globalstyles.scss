@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+body {
+  background: #000;;    
+}
+
+.main-wrapper,
+main {
+    min-height: 100%;
+}
+
+.main-wrapper,
+section,
+main,
+.container,
+.relative {
+   position:relative;
+}

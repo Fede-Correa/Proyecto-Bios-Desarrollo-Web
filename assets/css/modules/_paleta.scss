@@ -1,0 +1,22 @@
+$palette:(
+    orange: #F98531,
+    dark-gray: #292424,
+    gray: #333232,
+    white: #fff,
+    black: #000,
+);
+
+@each $name, $value in $palette {
+   %#{$name} {
+    color:$value;
+   };
+   .#{$name} {
+    @extend %#{$name}
+   };
+   %bg-#{$name}{
+    background:$value
+   };
+   .bg-#{$name} {
+    @extend %bg-#{$name}
+   }
+}

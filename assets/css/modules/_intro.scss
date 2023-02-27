@@ -1,0 +1,14 @@
+.intro {
+    height:100vh;
+    background:url(../images/backgrund-image.png) center 0 no-repeat #000;
+    background-size:cover;
+    .container {
+        height: 100%;
+    }
+    &_height-auto {
+        height:auto;
+    }
+    @media only screen and (max-width:480px) {
+        height: auto;
+    }
+}

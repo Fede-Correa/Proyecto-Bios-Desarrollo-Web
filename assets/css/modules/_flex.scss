@@ -1,0 +1,21 @@
+.flex {
+    display:flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.space-between {
+    //distribuye los elementos en horizontalmente
+    justify-content: space-between;
+}
+
+.align-items-center {
+    //los elementos se centran verticalmente
+    align-items: center;
+}

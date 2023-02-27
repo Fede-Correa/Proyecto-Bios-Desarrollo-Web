@@ -1,0 +1,96 @@
+.form-register {
+    position: relative;
+    width: 800px;
+    height: 659px;
+    background-color: rgba(255, 255, 255, .3);
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 3px 10px #000;
+    @media only screen and (max-width:480px) {
+        width: 410px;
+        height: 590px;
+        margin: 0 auto;
+    }
+}
+
+.form-title {
+    position: relative;
+    bottom: 10px;
+    @extend %black;
+    font-size: 36px;
+    text-align: center;
+    @media only screen and (max-width:480px) {
+        font-size: 20px;
+    }
+}
+
+.controls {
+    width: 329px;
+    height: 50px;
+    background-color: #0C0B0B;
+    @extend %white;
+    border-radius: 10px;
+    border: none;
+}
+
+.botons {
+    position: relative;
+    bottom: 10px;
+	width: 166px;
+	@extend %bg-white;
+	border: none;
+	padding: 12px;
+	@extend %black;
+	border-radius: 20px;
+	font-size: 24px;
+    &:hover{
+        background-color: #333232;
+        color: #fff;
+    }
+    @media only screen and (max-width:480px) {
+        font-size: 14px;
+        width: 100px;
+    }
+}
+
+[placeholder] {
+    padding-left: 25px;
+    font-size: 20px;
+    font-family: "lato";
+    @media only screen and (max-width:480px) {
+        font-size: 14px;
+    }
+    
+}
+
+textarea {
+    background-color: #0C0B0B;
+    @extend %white;
+    border-radius: 20px;
+    border: none;
+}
+
+.label {
+    position: relative;
+    bottom: 10px;
+	font-size: 20px;
+    @extend %white;
+    @media only screen and (max-width:480px) {
+        font-size: 13px;
+    }	
+}
+
+.contact-text {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-size: 18px;
+    @extend %white;
+    @media only screen and (max-width:480px) {
+        font-size: 11px;
+    }
+}

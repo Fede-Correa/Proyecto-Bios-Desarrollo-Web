@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3753741727.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=MedievalSharp&family=Open+Sans&family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="assets/css/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <title>Último Hogar</title>
+</head>
+<body>
+    <div class="main-wrapper lato" id="app">
+        <header class="main-header flex align-items-center">
+        <div class="container container_lg">
+            <img class="logo" src="assets/images/logo-black-small.svg" alt="logo" width="45">
+            <nav class="main-navigation" id="mainNavigation">
+                <button
+                    onclick="desplegarMenu()"
+                     class="buttonn buttonn_icon material-symbols-outlined" id="abrirCerrarMenu">
+                        menu
+                </button>
+                <ul class="main-menu medieval" id="mainMenu">
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Galería</a>
+                    </li>
+                    <li>
+                        <a href="beers.html">Cervezas</a>
+                    </li>
+                    <li>
+                        <a href="about-us.html">¿Quiénes Somos ?</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-ctrls">
+                <a href="#" class="link link_icon material-symbols-outlined color-black" id="cart">
+                    shopping_cart
+                </a>
+                <div class="search-wrap">
+                    <button class="button1 button1_icon button1_icon-md button1_icon-white material-symbols-outlined icon-search" id="search">
+                        search
+                    </button>
+                    <input type="search"  placeholder="Buscar..." class="input-search" id="inputSearch"/>
+                </div>
+            </div>
+        </div>
+        </header>
+        <main>
+            <section class="intro">
+                <div class="overlay"></div>
+                <article class="container container_lg container_lg flex justify-content-center align-items-center">
+                    <div class="media">
+                        <h1 class="title medieval">Cerveceria Último Hogar</h1>
+                        <p class="paragraph paragraph_box-lg paragraph_box-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ducimus labore sed minus facere corporis distinctio consectetur autem voluptatibus, voluptas earum, et minima, quam debitis ratione nostrum! Nesciunt, corporis molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laboriosam temporibus debitis impedit officiis quia mollitia inventore? Dolores, maiores.</p>
+                        <div class="flex justify-content-center">
+                        <a class="boton" href="gallery.html">Ver más</a>
+                        </div>
+                    </div>                  
+                </article>
+            </section>
+            <section class="slider-imgs standard-sectionn">
+                <article class="container1">
+                    <h2>
+                        Slider de Imagenes
+                    </h2>
+                    <!-- Slider main container -->
+                    <div class="swiper listado-images">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img class="bg-img" src="assets/images/img1-min.jpg" />
+                                <div class="overlay"></div>
+                                <div class="slider-content">
+                                    <h3>
+                                        Alemanas
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="bg-img" src="assets/images/img2-min.jpg" />
+                                <div class="overlay"></div>
+                                <div class="slider-content">
+                                    <h3>
+                                        Sin Alcohol
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="bg-img" src="assets/images/img3-min.jpg" />
+                                <div class="overlay"></div>
+                                <div class="slider-content">
+                                    <h3>
+                                        De Otoño
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container container_lg">
+                <div class="section-1">
+                    <h4 class="h4">© Copyright 2022 Cervercería Último Hogar</h4>
+                    <p class="contact">Contacto: cerveceríauh@gmail.com</p>
+                </div>
+                <div class="section-2">    
+                    <p>Seguinos en nuestras redes</p>
+                    <div class="social">
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                        <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="section-3">  
+                        <p>Federico Correa</p>
+                        <p class="pro">Diseñador Web</p>
+                    </div>
+                    <div class="section-4">
+                        <h4>¡Gracias por tu visita y regresa pronto!</h4>
+                    </div>             
+                </div>
+            </div>
+
+      
+       
+        </footer>
+    </div>
+</body>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+ <!-- Initialize Swiper -->
+ <script>
+    const swiper = new Swiper(".listadoCards", {
+      slidesPerView: 3,//slides por vista = total de card que vemos por vista
+      spaceBetween: 30,//espacio entre los slides
+      pagination: {//son las puntitos debajo del slider
+        el: ".swiper-pagination",
+        clickable: true,//hace que los puntitos puedan navegar, es decir, llevarte al siguiente o anterior slide.
+      },
+      navigation: {//las flechas
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+    });
+
+    const swiper2 = new Swiper(".listado-images", {
+      slidesPerView: 1,//slides por vista = total de card que vemos por vista
+      spaceBetween: 0,//espacio entre los slides
+      pagination: {//son las puntitos debajo del slider
+        el: ".swiper-pagination",
+        clickable: true,//hace que los puntitos puedan navegar, es decir, llevarte al siguiente o anterior slide.
+      },
+      navigation: {//las flechas
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+    });
+   
+  </script>
+</html>
